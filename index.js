@@ -11,7 +11,6 @@ var movie = require('./movie');
 rtm.on('message', function (message) {
 	var channel = message.channel;
 	var text = message.text;
-
 	switch (text) {
 		case '영화':
 			movie(rtm, channel);
